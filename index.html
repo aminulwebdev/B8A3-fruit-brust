@@ -27,11 +27,17 @@
     </script>
 
     <!-- -------Font------ -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
 
     <!-- -------style------ -->
-
+    <style>
+        .font_lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 
 
 </head>
@@ -44,46 +50,47 @@
                     Navbar part start
     ================================================= -->
 
-    <nav class="container mx-auto ">
-        <div class="navbar bg-[#F85559] rounded-full">
+        <nav class="container mx-auto py-11">
+            <div class="navbar bg-[#F85559] rounded-full">
 
-            <div class="navbar-start hidden lg:flex w-full pl-5">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
-                    <li><a>Item 3</a></li>
-                    <li><a>Item 3</a></li>
-                </ul>
-
-            </div>
-            <div class="md:navbar-center">
-                <a class="btn btn-ghost normal-case text-xl">Sports</a>
-            </div>
-
-            <div class="navbar-end w-full pr-5">
-                <div class="flex-none gap-2 ">
-                    <div class="form-control hidden lg:flex relative items-end justify-center ">
-                        <span class="absolute z-20 pr-5"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" placeholder="Search" class="input input-bordered w-96 h-14  rounded-full  z-10 " />
-                    </div>
-                
-                </div>
-                <div class="dropdown dropdown-end ">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <div class="navbar-start hidden lg:flex w-full pl-5">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Item 1</a></li>
                         <li><a>Item 3</a></li>
+                        <li><a>Item 3</a></li>
+                        <li><a>Item 3</a></li>
                     </ul>
+
+                </div>
+                <div class="md:navbar-center">
+                    <a class="btn btn-ghost normal-case text-xl">Sports</a>
+                </div>
+
+                <div class="navbar-end w-full pr-5">
+                    <div class="flex-none gap-2 ">
+                        <div class="form-control hidden lg:flex relative items-end justify-center ">
+                            <span class="absolute z-20 pr-5"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Search"
+                                class="input input-bordered w-96 h-14  rounded-full  z-10 " />
+                        </div>
+
+                    </div>
+                    <div class="dropdown dropdown-end ">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
         <!-- ========================================
                     Navbar part end
     ================================================= -->
@@ -94,33 +101,102 @@
     <main>
 
         <!-- ========================================
-                    Navbar part start
+                    Banner part start
     ================================================= -->
 
+        <section class="container mx-auto relative">
+            <div class="carousel w-full lg:h-[600px]  ">
+
+                <!-- ---slider 01----- -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/banner1.png" class="w-full  " />
+                    <div class="absolute text-center left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 ">
+                        <h1 class="text-7xl text-white font-extrabold font_lato ">Exotic tastes at your doorstep</h1>
+                        <p class="text-xl  text-white font-medium font_lato py-7">We supply highly quality organic
+                            products</p>
+                        <button
+                            class="text-xl  text-white font-extrabold font_lato bg-[#F85559] rounded-lg px-7 py-4 mb-16">Shop
+                            Now</button>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+
+                    </div>
+                </div>
+                <!-- ---slider 01----- -->
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="lg:flex justify-center hidden ">
+                <div
+                    class="flex justify-center px-16 py-12 bg-white rounded-lg lg:w-[] xl:w- mx-auto lg:gap-6 xl:gap-12 absolute -bottom-24">
+
+                    <img src="./images/fruit1.png" class="lg:w-[120px] lg:h-[107px] alt="">
+                    <img src="./images/fruit2.png" class="lg:w-[120px] lg:h-[107px] alt="">
+                    <img src="./images/fruit3.png" class="lg:w-[120px] lg:h-[107px] alt="">
+                    <img src="./images/fruit4.png" class="lg:w-[120px] lg:h-[107px] alt="">
+                    <img src="./images/fruit5.png" class="lg:w-[120px] lg:h-[107px] alt="">
+                    <img src="./images/fruit6.png" class="lg:w-[107px] lg:h-[107px] alt="">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================
+                    Banner part end
+    ================================================= -->
+
+
+
+
+
+        <!-- ========================================
+                    Deal of the day part start
+    ================================================= -->
+
+    
+        <!-- ========================================
+                    Deal of the day part end
+    ================================================= -->
+
+
+
+
+        <!-- ========================================
+                    Navbar part start
+    ================================================= -->
         <!-- ========================================
                     Navbar part end
     ================================================= -->
-        
-
-
-
-
-        <!-- ========================================
-                    Navbar part start
-    ================================================= -->
-        <!-- ========================================
-                    Navbar part end
-    ================================================= -->
-
-
-
-
-        <!-- ========================================
-                    Navbar part start
-    ================================================= -->
-        <!-- ========================================
-                    Navbar part end
-    ================================================= -->
 
 
 
@@ -133,7 +209,7 @@
                     Navbar part end
     ================================================= -->
 
-       
+
 
         <!-- ========================================
                     Navbar part start
