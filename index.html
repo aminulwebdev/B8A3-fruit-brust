@@ -18,8 +18,8 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        clifford: '#da373d',
+                    backgroundImage: {
+                        'hero-bg': "url('./images/team.png')"
                     }
                 }
             }
@@ -97,7 +97,6 @@
 
     </header>
 
-
     <main>
 
         <!-- ========================================
@@ -170,25 +169,21 @@
             </div>
         </section>
 
-
         <!-- ========================================
                     Banner part end
     ================================================= -->
-
-
-
-
 
         <!-- ========================================
                     Deal of the day part start
     ================================================= -->
 
-        <section class=" container mx-auto py-64">
+        <section class=" container mx-auto pt-64 pb-36">
 
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-5xl font-extrabold font_lato text-[#121212]">Deal of the day</h2>
-                            <p class="text-base font-medium font_lato text-[#121212] text-opacity-60 lg:w-[615px]  pt-6 pb-12">
+                            <p
+                                class="text-base font-medium font_lato text-[#121212] text-opacity-60 lg:w-[615px]  pt-6 pb-12">
                                 Contrary to
                                 popular belief, is not simply random text. It has roots in a piece of classical Latin
                                 literature from 45 BC, making it over 2000 years old.</p>
@@ -211,7 +206,7 @@
                                 <p class="text-5xl font-extrabold font_lato text-[#121212]">08</p>
                                 <p class="text-base font-medium font_lato text-[#121212] text-opacity-60">Seconds</p>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -581,7 +576,7 @@
 
                     <div class="text-center mt-12">
                         <button
-                            class="text-xl  text-white font-extrabold font_lato bg-[#F85559] rounded-lg px-7 py-4 mb-16">Shop
+                            class="text-xl  text-white font-extrabold font_lato bg-[#F85559] rounded-lg px-7 py-4 ">Shop
                             Now</button>
                     </div>
 
@@ -595,10 +590,83 @@
 
 
         <!-- ========================================
-                    Navbar part start
+                    Meet the team part start
     ================================================= -->
+
+        <section class="container mx-auto bg-hero-bg mb-32 relative z-20">
+            <div class="after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:bg-opacity-50 after:z-10">
+                <div class="py-32 px-56 relative z-20">
+                    <div>
+                        <h1 class="text-5xl text-white font-extrabold font_lato text-center">Meet the team section</h1>
+                        <p
+                            class="text-xs text-white leading-6 font-medium font_lato text-center max-w-[615px] mx-auto pt-2 pb-12">
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            Latin
+                            literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+    
+                    <div class="grid lg:grid-cols-4 grid-cols-1">
+                        <div>
+                            <img src="./images/member1.png" class="mx-auto" alt="">
+                            <div class="text-center">
+                                <h4 class="text-2xl text-white font-bold font_lato pt-8">Awlad Hossain</h4>
+                                <p class="text-xs text-white  font-medium font_lato pt-2 pb-4 ">Fruits Expert</p>
+                                <ul class="flex gap-3 text-white justify-center text-xl">
+                                    <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/member2.png" class="mx-auto" alt="">
+                            <div class="text-center">
+                                <h4 class="text-2xl text-white font-bold font_lato pt-8">Safia Chowdhury</h4>
+                                <p class="text-xs text-white  font-medium font_lato pt-2 pb-4 ">Fruits Expert</p>
+                                <ul class="flex gap-3 text-white justify-center text-xl">
+                                    <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/member3.png" class="mx-auto" alt="">
+                            <div class="text-center">
+                                <h4 class="text-2xl text-white font-bold font_lato pt-8">Rokib Hossain</h4>
+                                <p class="text-xs text-white  font-medium font_lato pt-2 pb-4 ">Fruits Expert</p>
+                                <ul class="flex gap-3 text-white justify-center text-xl">
+                                    <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/member4.png" class="mx-auto" alt="">
+                            <div class="text-center">
+                                <h4 class="text-2xl text-white font-bold font_lato pt-8">Chaity</h4>
+                                <p class="text-xs text-white  font-medium font_lato pt-2 pb-4 ">Fruits Expert</p>
+                                <ul class="flex gap-3 text-white justify-center text-xl">
+                                    <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                     
+                    
+    
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+
         <!-- ========================================
-                    Navbar part end
+                    Meet the team part end
     ================================================= -->
 
 
